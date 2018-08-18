@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+  manifest {
+    attributes(
+      'Class-Path': configurations.compile,
+      'Main-Class': 'helloWorkshop'
+    )
+  }
+}
