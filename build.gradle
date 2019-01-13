@@ -4,6 +4,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    testCompile 'junit:junit:4.10'
+}
+
 jar {
   manifest {
     attributes(
